@@ -7,3 +7,4 @@ public class ParticipantManager : MonoBehaviour {
 	public List<Hunter> hunters;
 	public List<Prey> prey;
 }
+/*taken from https://github.com/drfuzzyness*/

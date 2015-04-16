@@ -11,7 +11,7 @@ public class HunterDriver : MonoBehaviour {
 	void Update () {
 		if( !GetComponent<Hunter>().chasing ) {
 			foreach( Prey thisPrey in manager.prey ) {
-				if( /*GetComponent<Hunter>().sees( thisPrey.gameObject ) &&*/ !GetComponent<Hunter>().chasing ) {
+				if( GetComponent<Hunter>().sees( thisPrey.gameObject ) && !GetComponent<Hunter>().chasing ) {
 					GetComponent<Hunter>().chase( thisPrey.gameObject );
 					thisPrey.flee( GetComponent<Hunter>() );
 				}
@@ -19,3 +19,4 @@ public class HunterDriver : MonoBehaviour {
 		}
 	}
 }
+/*taken from https://github.com/drfuzzyness*/
